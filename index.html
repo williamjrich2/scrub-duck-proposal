@@ -322,6 +322,10 @@ h4 { font-size: 1.1rem; font-weight: 700; }
   .btn-primary, .btn-outline { width: 100%; justify-content: center; }
   .footer-inner { flex-direction: column; gap: 16px; text-align: center; }
   .cta-actions { flex-direction: column; align-items: center; }
+  .comparison .cost-grid { grid-template-columns: 1fr !important; gap: 0.75rem !important; }
+  .comparison .cost-grid > div { transform: scale(1) !important; }
+  .comparison .diy-box { padding: 1.5rem 1.25rem !important; }
+  .nav-cta { display: none; }
 }
 </style>
 </head>
@@ -518,7 +522,7 @@ h4 { font-size: 1.1rem; font-weight: 700; }
         <div class="pkg-price">
           <div class="pkg-price-setup">
             <span class="pkg-price-amount">$1,200</span>
-            <span class="pkg-price-label">one-time setup</span>
+            <span class="pkg-price-label">downpayment</span>
           </div>
           <div class="pkg-price-monthly">then <span>$297</span>/mo</div>
         </div>
@@ -544,7 +548,7 @@ h4 { font-size: 1.1rem; font-weight: 700; }
         <div class="pkg-price">
           <div class="pkg-price-setup">
             <span class="pkg-price-amount">$1,900</span>
-            <span class="pkg-price-label">one-time setup</span>
+            <span class="pkg-price-label">downpayment</span>
           </div>
           <div class="pkg-price-monthly">then <span>$597</span>/mo</div>
         </div>
@@ -569,11 +573,11 @@ h4 { font-size: 1.1rem; font-weight: 700; }
         <div class="pkg-name">Full System: Detailing + PW</div>
         <div class="pkg-desc">Run BOTH your detailing and pressure washing businesses through one unified AI-powered system. Built just for you.</div>
         <div class="pkg-price">
-          <div class="pkg-price-original">$3,800 setup if purchased separately</div>
+          <div class="pkg-price-original">$3,800 if purchased separately</div>
           <div class="pkg-price-savings">Migration Discount — Save $1,000</div>
           <div class="pkg-price-setup">
             <span class="pkg-price-amount">$2,800</span>
-            <span class="pkg-price-label">one-time setup</span>
+            <span class="pkg-price-label">downpayment</span>
           </div>
           <div class="pkg-price-monthly">then <span>$797</span>/mo <span style="font-size:0.8rem;color:var(--text-muted);font-weight:400;">(vs. $894 separate)</span></div>
         </div>
@@ -659,7 +663,7 @@ h4 { font-size: 1.1rem; font-weight: 700; }
           What's the contract situation?
           <span class="arrow">▾</span>
         </div>
-        <div class="faq-a"><div class="faq-a-inner">No long-term contracts. The setup fee covers building everything out. The monthly fee covers ongoing optimization, AI bot hosting, lead management, and support. You can cancel the monthly anytime — though clients typically stay because the ROI speaks for itself.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">No long-term contracts. The downpayment covers building everything out. The monthly fee covers ongoing optimization, AI bot hosting, lead management, and support. You can cancel the monthly anytime — though clients typically stay because the ROI speaks for itself.</div></div>
       </div>
       <div class="faq-item reveal reveal-delay-1">
         <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
@@ -687,7 +691,7 @@ h4 { font-size: 1.1rem; font-weight: 700; }
     <p style="text-align:center; max-width:600px; margin:0 auto 3rem; color:var(--text-muted);" class="reveal reveal-delay-2">Most service businesses piece together 5–7 different tools. Here's what that actually costs every month — <strong>per business</strong>.</p>
 
     <div style="max-width:700px; margin:0 auto;">
-      <div class="reveal reveal-delay-2" style="background:#fff; border-radius:16px; padding:2rem 2.5rem; box-shadow:0 2px 20px rgba(0,0,0,0.06); margin-bottom:2rem;">
+      <div class="reveal reveal-delay-2 diy-box" style="background:#fff; border-radius:16px; padding:2rem 2.5rem; box-shadow:0 2px 20px rgba(0,0,0,0.06); margin-bottom:2rem;">
         <div style="font-weight:700; font-family:var(--font-display); font-size:1.1rem; margin-bottom:1.5rem; color:var(--text);">DIY Tool Stack <span style="font-weight:400; color:var(--text-muted); font-size:0.9rem;">(per business)</span></div>
         <div style="display:flex; flex-direction:column; gap:0.75rem;">
           <div style="display:flex; justify-content:space-between; padding:0.5rem 0; border-bottom:1px solid #f0f0f0;">
@@ -727,7 +731,7 @@ h4 { font-size: 1.1rem; font-weight: 700; }
 
       <div class="reveal reveal-delay-3" style="text-align:center; margin:2rem 0 1.5rem; font-size:1.2rem; font-weight:600; color:var(--text-muted);">vs. with AnovaGrowth</div>
 
-      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem;" class="reveal reveal-delay-4">
+      <div style="display:grid; grid-template-columns: repeat(3, 1fr); gap:1rem;" class="reveal reveal-delay-4 cost-grid">
         <div style="background:linear-gradient(135deg, var(--primary-light) 0%, var(--primary) 100%); border-radius:14px; padding:1.5rem; text-align:center; color:#fff;">
           <div style="font-size:0.8rem; text-transform:uppercase; letter-spacing:0.05em; opacity:0.85; margin-bottom:0.5rem;">Tier 1</div>
           <div style="font-size:1.8rem; font-weight:800; font-family:var(--font-display);">$297</div>
